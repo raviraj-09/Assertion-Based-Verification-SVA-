@@ -33,7 +33,7 @@ module counter4_assertion(
     endproperty
     
     assert property (RESET_CHECK)
-        $display("Asserrtion 'RESET_CHECK' passed at time %0t.",$time);
+        $display("Assertion 'RESET_CHECK' passed at time %0t.",$time);
     else
         $error("Assertion 'RESET_CHECK' Failed at time %0t.",$time);
         
@@ -48,7 +48,7 @@ module counter4_assertion(
     endproperty
     
     assert property(INCREMENT_CHECK)
-        $display("Asserrtion 'INCREMENT_CHECK' passed at time %0t.",$time);
+        $display("Assertion 'INCREMENT_CHECK' passed at time %0t.",$time);
     else
         $error("Assertion 'INCREMENT_CHECK' Failed at time %0t.",$time);
     
@@ -59,7 +59,7 @@ module counter4_assertion(
     endproperty
     
     assert property (HOLD_CHECK)
-        $display("Asserrtion 'HOLD_CHECK' passed at time %0t.",$time);
+        $display("Assertion 'HOLD_CHECK' passed at time %0t.",$time);     
     else
         $error("Assertion 'HOLD_CHECK' Failed at time %0t.",$time);
     
@@ -70,7 +70,7 @@ module counter4_assertion(
     endproperty
 
     assert property(OVERFLOW_CHECK)
-        $display("Asserrtion 'OVERFLOW_CHECK' passed at time %0t.",$time);
+        $display("Assertion 'OVERFLOW_CHECK' passed at time %0t.",$time);
     else
         $error("Assertion 'OVERFLOW_CHECK' Failed at time %0t.",$time);
 
@@ -81,7 +81,7 @@ module counter4_assertion(
     endproperty
 
     assert property(ENABLE_CHECK)
-        $display("Asserrtion 'ENABLE_CHECK' passed at time %0t.",$time);
+        $display("Assertion 'ENABLE_CHECK' passed at time %0t.",$time);
     else
         $error("Assertion 'ENABLE_CHECK' Failed at time %0t.",$time);
     
