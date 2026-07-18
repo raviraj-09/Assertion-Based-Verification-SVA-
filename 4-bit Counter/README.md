@@ -99,9 +99,7 @@ property INCREMENT_CHECK;
 @(posedge clk)
 disable iff(reset)
 
-(enable && $past(count)!=4'd15)
-|=>
-(count==$past(count)+1);
+enable |=> count == $past(count) + 1;
 
 endproperty
 
@@ -219,13 +217,6 @@ This project demonstrates:
 
 ---
 
-## Future Enhancements
-
-- Randomized Testbench
-- Functional Coverage
-- Interface-based Verification
-- UVM Testbench
-- Formal Verification
 
 ---
 
